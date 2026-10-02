@@ -1,0 +1,22 @@
+<section class="page-head">
+  <div class="container">
+    <h1>{{t.flow.title}}</h1>
+    <p class="lede">{{t.flow.lead}}</p>
+  </div>
+</section>
+<section class="section">
+  <div class="container">
+    <ol class="steps">
+      {{#each flow.steps}}
+      <li class="step">
+        <div class="step-num">{{this.num}}</div>
+        <div>
+          <h3>{{this.title}}</h3>
+          <p>{{this.text}}</p>
+          {{#each this.points}}<ul>{{#each this.items}}<li>{{this}}</li>{{/each}}</ul>{{/each}}
+        </div>
+      </li>
+      {{/each}}
+    </ol>
+  </div>
+</section>

@@ -1,0 +1,28 @@
+<section class="page-head">
+  <div class="container">
+    <h1>{{t.oem.title}}</h1>
+    <p class="lede">{{t.oem.lead}}</p>
+  </div>
+</section>
+<section class="section">
+  <div class="container">
+    <div class="def-block">
+      <div class="tag">OEM</div>
+      <h2>{{t.oem.oem_title}}</h2>
+      <p>{{t.oem.oem_text}}</p>
+    </div>
+    <div class="def-block">
+      <div class="tag">ODM</div>
+      <h2>{{t.oem.odm_title}}</h2>
+      <p>{{t.oem.odm_text}}</p>
+    </div>
+    <div class="honest-note">{{t.oem.honest}}</div>
+    <h2 class="section-title" style="margin-top:40px">{{t.oem.todo_title}}</h2>
+    <p class="section-sub">{{t.oem.todo_sub}}</p>
+    <div class="cards">
+      {{#each oem.todos}}
+      <div class="card"><h3>{{this.title}}</h3><p>{{this.text}}</p></div>
+      {{/each}}
+    </div>
+  </div>
+</section>

@@ -1,0 +1,53 @@
+<section class="hero">
+  <div class="container">
+    <h1>{{t.home.hero_title}}</h1>
+    <p class="lede">{{t.home.hero_sub}}</p>
+    <div class="hero-cta">
+      <a class="btn btn-primary" href="/{{lang}}/contact/">{{t.home.hero_cta1}}</a>
+      <a class="btn btn-secondary" href="/{{lang}}/oem-odm/">{{t.home.hero_cta2}}</a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2 class="section-title">{{t.home.pillars_title}}</h2>
+    <p class="section-sub">{{t.home.pillars_sub}}</p>
+    <div class="cards">
+      {{#each home.pillars}}
+      <div class="card">
+        <div class="card-num">{{this.num}}</div>
+        <h3>{{this.title}}</h3>
+        <p>{{this.text}}</p>
+        <ul class="tick-list">{{#each this.items}}<li>{{this}}</li>{{/each}}</ul>
+        <ul class="flow-mini">{{#each this.steps}}<li>{{this}}</li>{{/each}}</ul>
+      </div>
+      {{/each}}
+    </div>
+  </div>
+</section>
+
+<section class="section alt">
+  <div class="container">
+    <h2 class="section-title">{{t.home.model_title}}</h2>
+    <p class="section-sub">{{t.home.model_text}}</p>
+    <div class="cards">
+      <div class="card"><h3>{{t.home.model_c1t}}</h3><p>{{t.home.model_c1d}}</p></div>
+      <div class="card"><h3>{{t.home.model_c2t}}</h3><p>{{t.home.model_c2d}}</p></div>
+      <div class="card"><h3>{{t.home.model_c3t}}</h3><p>{{t.home.model_c3d}}</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2 class="section-title">{{t.home.cats_title}}</h2>
+    <p class="section-sub">{{t.home.cats_sub}}</p>
+    <div class="cat-grid">
+      {{#each products.cats}}
+      <div class="cat"><h3>{{this.name}}</h3><p>{{this.en}}</p></div>
+      {{/each}}
+    </div>
+    <p style="margin-top:20px"><a href="/{{lang}}/products/">{{t.home.cats_more}}</a></p>
+  </div>
+</section>

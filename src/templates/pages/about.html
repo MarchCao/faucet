@@ -1,0 +1,20 @@
+<section class="page-head">
+  <div class="container">
+    <h1>{{t.about.title}}</h1>
+    <p class="lede">{{t.about.lead}}</p>
+  </div>
+</section>
+<section class="section">
+  <div class="container">
+    <div class="prose" style="max-width:760px">
+      {{#each about.paragraphs}}<p>{{this}}</p>{{/each}}
+      <div class="honest-note">{{t.about.model_note}}</div>
+      <h2>{{t.about.what_title}}</h2>
+      <ul>
+        {{#each about.what_items}}<li>{{this}}</li>{{/each}}
+      </ul>
+      <h2>{{t.about.lang_title}}</h2>
+      <p>{{t.about.lang_text}}</p>
+    </div>
+  </div>
+</section>

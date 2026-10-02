@@ -1,0 +1,19 @@
+<section class="page-head">
+  <div class="container">
+    <h1>{{t.faq.title}}</h1>
+    <p class="lede">{{t.faq.lead}}</p>
+  </div>
+</section>
+<section class="section">
+  <div class="container" style="max-width:820px">
+    <div class="faq-list">
+      {{#each faq.items}}
+      <details class="faq">
+        <summary>{{this.q}}</summary>
+        <div class="faq-a">{{this.a}}</div>
+      </details>
+      {{/each}}
+    </div>
+    <p style="margin-top:28px">{{t.faq.more_text}} <a href="/{{lang}}/contact/">{{t.header.cta}}</a></p>
+  </div>
+</section>

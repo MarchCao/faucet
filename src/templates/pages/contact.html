@@ -1,0 +1,95 @@
+<section class="page-head">
+  <div class="container">
+    <h1>{{t.contact.title}}</h1>
+    <p class="lede">{{t.contact.lead}}</p>
+  </div>
+</section>
+<section class="section">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="contact-info">
+        <h2 class="section-title">HAICE Faucet</h2>
+        <p>{{t.contact.email_label}}:</p>
+        <p class="email-big"><a href="mailto:sales@haice.top">sales@haice.top</a></p>
+        <p class="form-note">{{t.contact.direct_text}}</p>
+      </div>
+      <div class="form-card">
+        <form id="inquiryForm" novalidate>
+          <div class="hp" aria-hidden="true"><input type="text" name="website" tabindex="-1" autocomplete="off"></div>
+          <div class="field-row">
+            <div class="field">
+              <label for="f-name">{{t.contact.f_name}} <span class="req">*</span></label>
+              <input id="f-name" name="name" type="text" required autocomplete="name">
+            </div>
+            <div class="field">
+              <label for="f-company">{{t.contact.f_company}}</label>
+              <input id="f-company" name="company" type="text" autocomplete="organization">
+            </div>
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="f-email">{{t.contact.f_email}} <span class="req">*</span></label>
+              <input id="f-email" name="email" type="email" required autocomplete="email">
+            </div>
+            <div class="field">
+              <label for="f-country">{{t.contact.f_country}}</label>
+              <input id="f-country" name="country" type="text" autocomplete="country-name">
+            </div>
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="f-category">{{t.contact.f_category}}</label>
+              <select id="f-category" name="category">
+                {{#each contact.categories}}<option value="{{this}}">{{this}}</option>{{/each}}
+              </select>
+            </div>
+            <div class="field">
+              <label for="f-type">{{t.contact.f_type}}</label>
+              <select id="f-type" name="type">
+                {{#each contact.types}}<option value="{{this}}">{{this}}</option>{{/each}}
+              </select>
+            </div>
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="f-quantity">{{t.contact.f_quantity}}</label>
+              <input id="f-quantity" name="quantity" type="text">
+            </div>
+            <div class="field">
+              <label for="f-delivery">{{t.contact.f_delivery}}</label>
+              <input id="f-delivery" name="delivery" type="text">
+            </div>
+          </div>
+          <div class="field">
+            <label for="f-message">{{t.contact.f_message}} <span class="req">*</span></label>
+            <textarea id="f-message" name="message" required></textarea>
+          </div>
+          <div class="attach-note">{{t.contact.attach_note}}</div>
+          <button class="btn btn-primary" type="submit" id="submitBtn">{{t.contact.submit}}</button>
+          <div id="formStatus" class="form-status" role="status" aria-live="polite"></div>
+          <p class="form-note" style="margin-top:12px">{{t.contact.form_note}}</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+<script>
+window.FORM_LABELS = {
+  name: "{{t.contact.f_name}}",
+  company: "{{t.contact.f_company}}",
+  email: "{{t.contact.f_email}}",
+  country: "{{t.contact.f_country}}",
+  category: "{{t.contact.f_category}}",
+  type: "{{t.contact.f_type}}",
+  quantity: "{{t.contact.f_quantity}}",
+  delivery: "{{t.contact.f_delivery}}",
+  message: "{{t.contact.f_message}}",
+  subject_prefix: "{{t.contact.subject_prefix}}"
+};
+window.FORM_STATUS = {
+  sending: "{{t.contact.sending}}",
+  success: "{{t.contact.success_text}}",
+  error: "{{t.contact.error_text}}",
+  partial: "{{t.contact.partial_text}}"
+};
+</script>

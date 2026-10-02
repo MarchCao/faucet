@@ -1,0 +1,11 @@
+name = "haice-faucet-inquiry"
+main = "worker.js"
+compatibility_date = "2026-09-30"
+
+# Non-secret config (visible in dashboard; fine to commit)
+[vars]
+FROM_EMAIL = "HAICE Faucet <sales@haice.top>"
+INQUIRY_TO = "sales@haice.top"
+
+# Secrets (NEVER commit — set via CLI):
+#   wrangler secret put RESEND_API_KEY

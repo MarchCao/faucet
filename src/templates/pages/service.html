@@ -1,0 +1,17 @@
+<section class="page-head">
+  <div class="container">
+    <h1>{{t.service.title}}</h1>
+    <p class="lede">{{t.service.lead}}</p>
+  </div>
+</section>
+<section class="section">
+  <div class="container">
+    {{#each service.items}}
+    <div class="def-block">
+      <h2>{{this.title}}</h2>
+      <p>{{this.text}}</p>
+      {{#each this.points}}<ul class="tick-list">{{#each this.items}}<li>{{this}}</li>{{/each}}</ul>{{/each}}
+    </div>
+    {{/each}}
+  </div>
+</section>

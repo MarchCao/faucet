@@ -1,0 +1,20 @@
+<section class="page-head">
+  <div class="container">
+    <h1>{{t.products.title}}</h1>
+    <p class="lede">{{t.products.lead}}</p>
+  </div>
+</section>
+<section class="section">
+  <div class="container">
+    <div class="cat-grid">
+      {{#each products.cats}}
+      <div class="cat"><h3>{{this.name}}</h3><p>{{this.en}}</p></div>
+      {{/each}}
+    </div>
+    <div class="notice">
+      <strong>{{t.products.prep_title}}</strong><br>
+      {{t.products.prep_text}}
+    </div>
+    <p style="margin-top:24px">{{t.products.inquiry_text}} <a href="/{{lang}}/contact/">{{t.header.cta}}</a></p>
+  </div>
+</section>

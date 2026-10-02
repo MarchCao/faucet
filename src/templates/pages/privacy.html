@@ -1,0 +1,17 @@
+<section class="page-head">
+  <div class="container">
+    <h1>{{t.privacy.title}}</h1>
+    <p class="lede">{{t.privacy.lead}}</p>
+  </div>
+</section>
+<section class="section">
+  <div class="container">
+    <div class="prose" style="max-width:780px">
+      {{#each privacy.sections}}
+      <h2>{{this.h}}</h2>
+      {{#each this.paras}}<p>{{this}}</p>{{/each}}
+      {{/each}}
+      <p class="form-note">{{t.privacy.updated}}: 2026-09-29</p>
+    </div>
+  </div>
+</section>
