@@ -165,7 +165,7 @@ export default {
       return json({ ok: false, error: "not_configured" }, 500, origin);
     }
 
-    const from = env.FROM_EMAIL || "HAICE Faucet <sales@haice.top>";
+    const from = env.FROM_EMAIL || "HAICE Faucet <info@haice.top>";
     const to = env.INQUIRY_TO || "sales@haice.top";
 
     try {

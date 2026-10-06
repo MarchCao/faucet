@@ -8,7 +8,7 @@ compatibility_date = "2026-09-30"
 # haice.top is the verified one for this API key. Flip this var only after
 # send.haice.top shows Verified at resend.com/domains for the same account.
 [vars]
-FROM_EMAIL = "HAICE Faucet <sales@haice.top>"
+FROM_EMAIL = "HAICE Faucet <info@haice.top>"
 INQUIRY_TO = "sales@haice.top"
 
 # Secrets (NEVER commit — set via CLI):
