@@ -9,7 +9,7 @@ compatibility_date = "2026-09-30"
 # send.haice.top shows Verified at resend.com/domains for the same account.
 [vars]
 FROM_EMAIL = "HAICE Faucet <info@haice.top>"
-INQUIRY_TO = "sales@haice.top"
+INQUIRY_TO = "sales@haice.top, junhcao@163.com"
 
 # Secrets (NEVER commit — set via CLI):
 #   wrangler secret put RESEND_API_KEY
