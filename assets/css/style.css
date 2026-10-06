@@ -191,3 +191,6 @@ body.nav-open .main-nav a.active{color:var(--brand);border-left:4px solid var(--
 .prod-cat-img{width:100%;height:auto;border-radius:calc(var(--radius) - 2px);margin-bottom:14px;background:var(--bg-soft)}
 .factory-video{width:100%;max-width:760px;height:auto;border-radius:var(--radius);background:#000;margin:8px 0 4px}
 .muted{color:var(--muted);font-size:.92rem}
+.model-link code{transition:border-color .15s,background .15s}
+.model-link:hover code{border-color:var(--brand);background:#eaf0f7}
+.model-link:hover{text-decoration:none}
