@@ -195,6 +195,23 @@
     <p style="margin-top:24px">需要某型号的详细规格或报价， <a href="/zh/contact/">联系我们</a></p>
   </div>
 </section>
+<script>
+// Deep-link fallback: native fragment scroll can miss on iOS (cached page w/o
+// anchors, late layout). Scroll to the category explicitly.
+(function(){
+  function scrollToHash(){
+    var id = (location.hash || "").replace("#", "");
+    if (!id) return;
+    var el = document.getElementById(id);
+    if (el) { try { el.scrollIntoView({ block: "start" }); } catch (e) { el.scrollIntoView(); } }
+  }
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", scrollToHash);
+  } else { scrollToHash(); }
+  window.addEventListener("load", scrollToHash);
+  window.addEventListener("hashchange", scrollToHash);
+})();
+</script>
 
 </main>
 <section class="cta-band" aria-label="Contact">
