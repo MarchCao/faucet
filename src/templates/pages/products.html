@@ -6,14 +6,26 @@
 </section>
 <section class="section">
   <div class="container">
-    <div class="cat-grid">
-      {{#each products.cats}}
-      <div class="cat"><h3>{{this.name}}</h3><p>{{this.en}}</p></div>
-      {{/each}}
+    {{#each products.cats}}
+    <div class="prod-cat">
+      <div class="prod-cat-head">
+        <h2>{{this.name}}</h2>
+        <p class="en">{{this.en}}</p>
+      </div>
+      <ul class="model-list">
+        {{#each this.models}}
+        <li><code>{{this}}</code></li>
+        {{/each}}
+      </ul>
     </div>
-    <div class="notice">
-      <strong>{{t.products.prep_title}}</strong><br>
-      {{t.products.prep_text}}
+    {{/each}}
+    <div class="spec-box">
+      <h3>{{t.products.spec_title}}</h3>
+      <p>{{t.products.spec_text}}</p>
+    </div>
+    <div class="spec-box">
+      <h3>{{t.products.certs_title}}</h3>
+      <p>{{t.products.certs_text}}</p>
     </div>
     <p style="margin-top:24px">{{t.products.inquiry_text}} <a href="/{{lang}}/contact/">{{t.header.cta}}</a></p>
   </div>
