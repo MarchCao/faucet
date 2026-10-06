@@ -173,14 +173,16 @@
           "BF42004",
           "BF42007",
           "FW2A101"
-        ]
+        ],
+        "img": "basin-faucet.webp"
       },
       {
         "name": "Bath Faucet",
         "en": "Bath Faucet",
         "models": [
           "SYF-9001"
-        ]
+        ],
+        "img": "bath-faucet.webp"
       },
       {
         "name": "Kitchen Faucet",
@@ -199,14 +201,16 @@
           "FP2A104-3",
           "FP2A104-5",
           "FP2A103"
-        ]
+        ],
+        "img": "kitchen-faucet.webp"
       },
       {
         "name": "Bath Hardware",
         "en": "Bath Hardware",
         "models": [
           "BLE-CP1"
-        ]
+        ],
+        "img": "bath-hardware.webp"
       },
       {
         "name": "OEM Parts & Accessories",
@@ -219,7 +223,8 @@
           "SYF-B05",
           "SYF-B04",
           "SYF-E05"
-        ]
+        ],
+        "img": "oem.webp"
       }
     ],
     "spec_title": "Materials & Finishes",
@@ -322,7 +327,9 @@
       "Sample arrangement & revision follow-up",
       "Production progress follow-up",
       "Quality confirmation & lead-time management"
-    ]
+    ],
+    "video_title": "Partner Factory",
+    "video_note": "Official introduction video from the partner factory (source: factory website)."
   },
   "flow": {
     "title": "Production Flow",

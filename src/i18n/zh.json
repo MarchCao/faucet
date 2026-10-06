@@ -173,14 +173,16 @@
           "BF42004",
           "BF42007",
           "FW2A101"
-        ]
+        ],
+        "img": "basin-faucet.webp"
       },
       {
         "name": "浴缸龙头",
         "en": "Bath Faucet",
         "models": [
           "SYF-9001"
-        ]
+        ],
+        "img": "bath-faucet.webp"
       },
       {
         "name": "厨房龙头",
@@ -199,14 +201,16 @@
           "FP2A104-3",
           "FP2A104-5",
           "FP2A103"
-        ]
+        ],
+        "img": "kitchen-faucet.webp"
       },
       {
         "name": "卫浴五金",
         "en": "Bath Hardware",
         "models": [
           "BLE-CP1"
-        ]
+        ],
+        "img": "bath-hardware.webp"
       },
       {
         "name": "OEM 零配件",
@@ -219,7 +223,8 @@
           "SYF-B05",
           "SYF-B04",
           "SYF-E05"
-        ]
+        ],
+        "img": "oem.webp"
       }
     ],
     "spec_title": "材质与表面处理",
@@ -322,7 +327,9 @@
       "样品安排与修改跟进",
       "生产进度跟进",
       "品质确认与交期管理沟通"
-    ]
+    ],
+    "video_title": "合作工厂介绍",
+    "video_note": "以下为合作工厂官方介绍视频（来源：工厂官网）。"
   },
   "flow": {
     "title": "生产流程",

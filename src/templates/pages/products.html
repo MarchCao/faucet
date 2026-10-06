@@ -8,6 +8,7 @@
   <div class="container">
     {{#each products.cats}}
     <div class="prod-cat">
+      <img class="prod-cat-img" src="/assets/img/{{this.img}}" alt="{{this.name}}" loading="lazy" width="700" height="400">
       <div class="prod-cat-head">
         <h2>{{this.name}}</h2>
         <p class="en">{{this.en}}</p>

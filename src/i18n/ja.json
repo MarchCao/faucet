@@ -173,14 +173,16 @@
           "BF42004",
           "BF42007",
           "FW2A101"
-        ]
+        ],
+        "img": "basin-faucet.webp"
       },
       {
         "name": "浴槽用水栓",
         "en": "Bath Faucet",
         "models": [
           "SYF-9001"
-        ]
+        ],
+        "img": "bath-faucet.webp"
       },
       {
         "name": "キッチン水栓",
@@ -199,14 +201,16 @@
           "FP2A104-3",
           "FP2A104-5",
           "FP2A103"
-        ]
+        ],
+        "img": "kitchen-faucet.webp"
       },
       {
         "name": "浴室金物",
         "en": "Bath Hardware",
         "models": [
           "BLE-CP1"
-        ]
+        ],
+        "img": "bath-hardware.webp"
       },
       {
         "name": "OEM部品・アクセサリー",
@@ -219,7 +223,8 @@
           "SYF-B05",
           "SYF-B04",
           "SYF-E05"
-        ]
+        ],
+        "img": "oem.webp"
       }
     ],
     "spec_title": "材質と表面処理",
@@ -322,7 +327,9 @@
       "サンプル手配・修正フォロー",
       "生産進捗フォロー",
       "品質確認・納期管理連絡"
-    ]
+    ],
+    "video_title": "提携工場の紹介",
+    "video_note": "提携工場の公式紹介動画です（出典：工場公式サイト）。"
   },
   "flow": {
     "title": "生産フロー",

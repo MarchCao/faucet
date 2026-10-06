@@ -173,14 +173,16 @@
           "BF42004",
           "BF42007",
           "FW2A101"
-        ]
+        ],
+        "img": "basin-faucet.webp"
       },
       {
         "name": "욕조 수전",
         "en": "Bath Faucet",
         "models": [
           "SYF-9001"
-        ]
+        ],
+        "img": "bath-faucet.webp"
       },
       {
         "name": "주방 수전",
@@ -199,14 +201,16 @@
           "FP2A104-3",
           "FP2A104-5",
           "FP2A103"
-        ]
+        ],
+        "img": "kitchen-faucet.webp"
       },
       {
         "name": "욕실 하드웨어",
         "en": "Bath Hardware",
         "models": [
           "BLE-CP1"
-        ]
+        ],
+        "img": "bath-hardware.webp"
       },
       {
         "name": "OEM 부품 및 액세서리",
@@ -219,7 +223,8 @@
           "SYF-B05",
           "SYF-B04",
           "SYF-E05"
-        ]
+        ],
+        "img": "oem.webp"
       }
     ],
     "spec_title": "재질 및 표면 처리",
@@ -322,7 +327,9 @@
       "샘플 준비·수정 팔로우",
       "생산 진척 팔로우",
       "품질 확인·납기 관리 연락"
-    ]
+    ],
+    "video_title": "협력 공장 소개",
+    "video_note": "협력 공장의 공식 소개 영상입니다(출처: 공장 공식 사이트)."
   },
   "flow": {
     "title": "생산 프로세스",

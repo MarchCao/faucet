@@ -9,6 +9,11 @@
     <div class="prose" style="max-width:760px">
       {{#each about.paragraphs}}<p>{{this}}</p>{{/each}}
       <div class="honest-note">{{t.about.model_note}}</div>
+      <h2>{{t.about.video_title}}</h2>
+      <p class="muted">{{t.about.video_note}}</p>
+      <video class="factory-video" controls preload="none" poster="/assets/video/company-poster.jpg" playsinline>
+        <source src="/assets/video/company.mp4" type="video/mp4">
+      </video>
       <h2>{{t.about.what_title}}</h2>
       <ul>
         {{#each about.what_items}}<li>{{this}}</li>{{/each}}
