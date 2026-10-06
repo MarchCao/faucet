@@ -27,6 +27,18 @@
   var y = document.getElementById("year");
   if (y) y.textContent = new Date().getFullYear();
 
+  // Prefill inquiry message from ?model= (product page deep link)
+  (function(){
+    try {
+      var model = new URLSearchParams(window.location.search).get("model");
+      if (!model) return;
+      var msg = document.getElementById("f-message");
+      if (msg && !msg.value) {
+        msg.value = (window.MODEL_PREFIX || "Model: ") + model;
+      }
+    } catch (e) { /* ignore */ }
+  })();
+
   // Contact form -> server-side API (Cloudflare Worker + Resend).
   // The API key lives only as a Worker secret; the frontend only knows the endpoint URL.
   var INQUIRY_ENDPOINT = "https://haice-faucet-inquiry.junhcao.workers.dev/api/inquiry";

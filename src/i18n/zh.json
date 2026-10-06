@@ -445,10 +445,10 @@
     "f_message": "留言",
     "categories": [
       "面盆龙头",
-      "厨房龙头",
-      "淋浴龙头",
       "浴缸龙头",
-      "感应龙头",
+      "厨房龙头",
+      "卫浴五金",
+      "OEM 零配件",
       "其他"
     ],
     "types": [
@@ -463,7 +463,8 @@
     "partial_text": "我们已收到您的询盘，但确认邮件发送失败，我们会尽快与您联系。如着急，请直接发送邮件至 sales@haice.top。",
     "error_text": "发送失败，请直接发送邮件至 sales@haice.top 与我们联系。",
     "subject_prefix": "询盘",
-    "submit": "发送"
+    "submit": "发送",
+    "model_prefix": "我想咨询以下型号："
   },
   "cta": {
     "button": "联系我们",
