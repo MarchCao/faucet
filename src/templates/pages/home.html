@@ -45,7 +45,7 @@
     <p class="section-sub">{{t.home.cats_sub}}</p>
     <div class="cat-grid">
       {{#each products.cats}}
-      <div class="cat"><h3>{{this.name}}</h3><p>{{this.en}}</p></div>
+      <a class="cat" href="/{{lang}}/products/#cat-{{this.anchor}}"><h3>{{this.name}}</h3><p>{{this.en}}</p></a>
       {{/each}}
     </div>
     <p style="margin-top:20px"><a href="/{{lang}}/products/">{{t.home.cats_more}}</a></p>

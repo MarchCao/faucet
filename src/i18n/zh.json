@@ -174,7 +174,8 @@
           "BF42007",
           "FW2A101"
         ],
-        "img": "basin-faucet.webp"
+        "img": "basin-faucet.webp",
+        "anchor": "basin-faucet"
       },
       {
         "name": "浴缸龙头",
@@ -182,7 +183,8 @@
         "models": [
           "SYF-9001"
         ],
-        "img": "bath-faucet.webp"
+        "img": "bath-faucet.webp",
+        "anchor": "bath-faucet"
       },
       {
         "name": "厨房龙头",
@@ -202,7 +204,8 @@
           "FP2A104-5",
           "FP2A103"
         ],
-        "img": "kitchen-faucet.webp"
+        "img": "kitchen-faucet.webp",
+        "anchor": "kitchen-faucet"
       },
       {
         "name": "卫浴五金",
@@ -210,7 +213,8 @@
         "models": [
           "BLE-CP1"
         ],
-        "img": "bath-hardware.webp"
+        "img": "bath-hardware.webp",
+        "anchor": "bath-hardware"
       },
       {
         "name": "OEM 零配件",
@@ -224,7 +228,8 @@
           "SYF-B04",
           "SYF-E05"
         ],
-        "img": "oem.webp"
+        "img": "oem.webp",
+        "anchor": "oem"
       }
     ],
     "spec_title": "材质与表面处理",

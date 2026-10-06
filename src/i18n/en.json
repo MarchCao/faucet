@@ -174,7 +174,8 @@
           "BF42007",
           "FW2A101"
         ],
-        "img": "basin-faucet.webp"
+        "img": "basin-faucet.webp",
+        "anchor": "basin-faucet"
       },
       {
         "name": "Bath Faucet",
@@ -182,7 +183,8 @@
         "models": [
           "SYF-9001"
         ],
-        "img": "bath-faucet.webp"
+        "img": "bath-faucet.webp",
+        "anchor": "bath-faucet"
       },
       {
         "name": "Kitchen Faucet",
@@ -202,7 +204,8 @@
           "FP2A104-5",
           "FP2A103"
         ],
-        "img": "kitchen-faucet.webp"
+        "img": "kitchen-faucet.webp",
+        "anchor": "kitchen-faucet"
       },
       {
         "name": "Bath Hardware",
@@ -210,7 +213,8 @@
         "models": [
           "BLE-CP1"
         ],
-        "img": "bath-hardware.webp"
+        "img": "bath-hardware.webp",
+        "anchor": "bath-hardware"
       },
       {
         "name": "OEM Parts & Accessories",
@@ -224,7 +228,8 @@
           "SYF-B04",
           "SYF-E05"
         ],
-        "img": "oem.webp"
+        "img": "oem.webp",
+        "anchor": "oem"
       }
     ],
     "spec_title": "Materials & Finishes",
