@@ -3,6 +3,10 @@ main = "worker.js"
 compatibility_date = "2026-09-30"
 
 # Non-secret config (visible in dashboard; fine to commit)
+# FROM must be an address on a Resend-verified sending domain.
+# NOTE 2026-10-06: Resend API rejected send.haice.top (403 not verified);
+# haice.top is the verified one for this API key. Flip this var only after
+# send.haice.top shows Verified at resend.com/domains for the same account.
 [vars]
 FROM_EMAIL = "HAICE Faucet <sales@haice.top>"
 INQUIRY_TO = "sales@haice.top"

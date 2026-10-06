@@ -172,6 +172,7 @@ export default {
       const inquiry = buildInquiryEmail(d, lang, { time: new Date().toISOString(), ip });
       await resendSend(env, { from, to, subject: inquiry.subject, text: inquiry.text, replyTo: str(d.email, 254) });
     } catch (e) {
+      console.error("Resend inquiry error:", e);
       return json({ ok: false, error: "send_failed" }, 502, origin);
     }
 
@@ -180,6 +181,7 @@ export default {
       await resendSend(env, { from, to: str(d.email, 254), subject: auto.subject, text: auto.text, replyTo: to });
     } catch (e) {
       // inquiry already delivered; auto-reply failure is non-fatal
+      console.error("Resend auto-reply error:", e);
       return json({ ok: true, autoReply: false }, 200, origin);
     }
     return json({ ok: true }, 200, origin);
